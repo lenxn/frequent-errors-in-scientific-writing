@@ -1,0 +1,35 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage{ulem}
+
+\title{Frequent Errors in Scientific Writing}
+\author{Stefan Lengauer}
+\date{Version 0.1, \today}
+
+\begin{document}
+
+\maketitle
+
+\noindent This checklist constitutes a list of bad practices I encounter in almost every Seminar Paper, Bachelor/Master Thesis, or research paper. 
+Please make sure that none of these errors appear in your work if you want to have feedback. 
+
+\begin{description}
+    \item [Usage of Acronyms] Acronyms should be introduced upon their first usage with the expanded version followed by the abbreviated version in brackets. 
+        \begin{itemize}
+            \item Do \underline{not} re-introduced already existing acronyms.
+            \item If a concept is abbreviated, introduce the acronym on the first usage. 
+            \item Once introduced, do \underline{not} use the expanded form. 
+        \end{itemize}
+    If \LaTeX is used, I heavily recommend to use the \texttt{glossaries} package. With that acronyms can be simply define with a handle. In text the expansion is handled automatically by just using \texttt{\textbackslash gls\{handle\}}. Use \texttt{\textbackslash glsdisablehyper} to prevent \LaTeX from inserting hyperlinks at every acronym.
+    \item [Smart Quotes] For the \LaTeX compiler to render quotes correctly (i.e., opening/closing quotes), \texttt{`} and \texttt{'} and \texttt{``} and \texttt{''} must be used for single- and double quotes respectively. Do \underline{not} use \texttt{"}.
+    \item [Language Consistency] Do not mix US and UK English. E.g., color vs. colour. Do not use informal language such as ``it's'' or ``they're''. 
+    \item [Captions] Captions should be full sentences and end with a `.'. They should fully describe the respective figure/table such that the element can be understood without the floating text. If a list of figures is used, a short version of the caption can also be provided. For tables the caption should be on top. 
+    \item [References] When referring to a concrete figure, table, equation (e.g., see Figure~1), use uppercase Figure, Table, Caption. Use a non-breaking space `\texttt{$\sim$}' to avoid line breaks between the word and the reference. For equations, \texttt{\textbackslash eqnref} must be used (renders the number in brackets). 
+    \item [Citations] Citations must be part of the sentence -- i.e., if the citation if removed the sentence should still be valid. When the citation is used as a noun, write the author name(s) followed by the corresponding \texttt{\textbackslash cite}. 
+    \item [Enumerations/Bullet Lists] In English bullet points start with an \uline{uppercase} letter. 
+\end{description}
+
+
+
+
+
+\end{document}
